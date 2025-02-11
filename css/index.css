@@ -527,14 +527,6 @@
         height: auto;
         animation: bounce 1.5s infinite ease-in-out;
     }
-    .text1 {
-        opacity: 1; /* 모바일에서 텍스트1은 바로 보이도록 설정 */
-    }
-    .text2 {
-        opacity: 0; /* 모바일에서 텍스트2는 초기엔 숨겨짐 */
-        top: 57% !important;
-        transition: opacity 1s ease-in-out 2s; /* 2초 후에 나타나도록 설정 */
-    }
     .section1 .bottom {
         display: none;
     }
@@ -659,6 +651,15 @@
 }
 
 @media screen and (max-width: 767px) {
+    .section1 .content {
+        height: 100%;
+    }
+    .text1 {
+        opacity: 1; /* 모바일에서 텍스트1은 바로 보이도록 설정 */
+    }
+    .text2 {
+      display: none;
+    }
     .section1 .text1,
     .section1 .text2 {
         font-size: 19px;
