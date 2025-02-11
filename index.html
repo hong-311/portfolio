@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- Section 1: 소개 -->
+        <section id="section1" class="section1">
+            <div class="content">
+                <span class="text1" id="text1">I AM WEB PUBLISHER</span>
+                <p class="text2" id="text2" aria-label="Copyright 2025 Portfolio">ⓒ2025 PORTFOLIO</p>
+                <div class="bottom">
+                    <span class="scroll_text">Scroll Down</span>
+                    <img src="./img/scroll_down.png" class="scroll" alt="Scroll down icon">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: 프로필 -->
+        <section id="section2" class="section2">
+            <h2>PROFILE</h2>
+            <div class="inner">
+                <div class="profile_left">
+                    <img src="./img/profile.jpg" class="profile_img" alt="홍경영 profile image">
+                    <p class="name">홍경영 <span>Hong Gyeong Young</span></p>
+                    <p class="birth">2000.03.11</p>
+                    <p class="tel">010-4257-3012</p>
+                </div>
+                <div class="profile_right">
+                    <p>기초와 원칙을 중시하며, 모든 사용자가 쉽게 접근하고 즐겁게 이용할 수 있는 사이트를 구축하는 것을 목표로 하고 있습니다.</p>
+                    <ul class="profile_list">
+                        <!-- Education -->
+                        <li class="edu">
+                            <h3>EDUCATION</h3>
+                            <p class="date">· 2023.02 ~ 2023.06</p>
+                            <p>더조은 컴퓨터 아카데미 / 머신러닝활용 자바, 파이썬 개발자과정 수료</p>
+                            <p class="date">· 2023.07 ~ 2023.09</p>
+                            <p>이젠 아카데미 / 프론트엔드 개발 리액트(React JS)과정 수료</p>
+                        </li>
+                        <!-- Experience -->
+                        <li>
+                            <h3>EXPERIENCE</h3>
+                            <p class="date">· 2024.02 ~ 2025.01</p>
+                            <p>주식회사 쇼엠 / 플랫폼 운영팀 / 웹 & 앱 퍼블리셔 정직원</p>
+                        </li>
+                        <!-- Certificates -->
+                        <li class="cer">
+                            <h3>CERTIFICATE</h3>
+                            <p class="date">· 2022.05</p>
+                            <p>컴퓨터활용능력 2급 취득</p>
+                            <p class="date">· 2022.08</p>
+                            <p>OPIc IM2(Intermediate Mid2) 취득 </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Skills -->
+        <section id="section2_skill" class="section2_skill">
+            <h2>SKILL</h2>
+            <div class="skill_wrap">
+                <div class="skill">
+                    <img src="./img/html.jpg" class="skill_img" alt="HTML skill image">
+                    <p>시멘틱 마크업<br>웹 표준 및 웹 접근성 준수<br>크로스 브라우징</p>
+                </div>
+                <div class="skill">
+                    <img src="./img/css.jpg" class="skill_img" alt="CSS skill image">
+                    <p>PC/Mobile 최적화된 레이아웃 구현<br>미디어쿼리를 이용한 반응형 작업<br>애니메이션 구현</p>
+                </div>
+                <div class="skill">
+                    <img src="./img/js.jpg" class="skill_img" alt="JavaScript skill image">
+                    <p>Javascript/jQuery<br>기본 문법 이해, 동적 코드 작성<br>오픈소스를 활용한 기능 개선 및 수정</p>
+                </div>
+                <div class="skill">
+                    <img src="./img/sass.jpg" class="skill_img" alt="SASS skill image">
+                    <p>SCSS/Sass 기본 문법 이해<br>변수를 활용한 코드 재사용<br>상속 기능 사용 가능</p>
+                </div>
+                <div class="skill">
+                    <img src="./img/php.jpg" class="skill_img" alt="PHP skill image">
+                    <p>기본 문법 이해<br>데이터베이스와 연결<br>데이터를 불러와 화면에 출력</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Works & Projects -->
+        <section id="section3" class="section section3">
+            <div class="top">
+                <h2>WORKS & PROJECT</h2>
+                <span class="platform">APP / KAKAO Talk Channel</span>
+            </div>
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="box_left">
+                            <img src="./img/port1.png" class="port_img" alt="Project image">
+                            <img src="./img/port2.png" class="port_img" alt="Project image">
+                        </div>
+                        <div class="box_right">
+                            <h3 class="port_title"><img src="./img/cheong_logo.png" class="port_logo" alt="Project logo"></h3>
+                            <ul class="info">
+                                <li><strong>플랫폼</strong><p>APP(IOS)</p></li>
+                                <li><strong>참여도</strong><p>개인작업 100%</p></li>
+                                <li><strong>사용 프로그램</strong><p>HTML / CSS / JavaScript / PHP</p></li>
+                                <li><strong>제작 페이지</strong><p>모든 페이지</p></li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <a class="btn" href="https://apps.apple.com/kr/app/id6499254431">Download</a>
+                                <a class="btn" href="https://monthly.goldsmart.co.kr/">Website</a>
+                                <a class="btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_left">
+                            <img src="./img/port3.png" class="port_img" alt="Project image">
+                            <img src="./img/port4.png" class="port_img" alt="Project image">
+                        </div>
+                        <div class="box_right">
+                            <h3 class="port_title"><img src="./img/cctv_logo.png" class="port_logo" alt="Project logo"></h3>
+                            <ul class="info">
+                                <li><strong>플랫폼</strong><p>APP(PS)</p></li>
+                                <li><strong>참여도</strong><p>개인작업 100%</p></li>
+                                <li><strong>사용 프로그램</strong><p>HTML / CSS / JavaScript / PHP</p></li>
+                                <li><strong>제작 페이지</strong><p>모든 페이지</p></li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <a class="btn" href="https://play.google.com/store/apps/details?id=com.byps.supmentoil">Download</a>
+                                <a class="btn" href="https://supmentoil.byunjungdae81.co.kr/ver6">Website</a>
+                                <a class="btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_left">
+                            <img src="./img/port13.jpg" class="port_img" alt="Project image">
+                            <img src="./img/port14.jpg" class="port_img" alt="Project image">
+                        </div>
+                        <div class="box_right">
+                            <h3 class="port_title"><img src="./img/naeil_logo.png" class="port_logo" alt="Project logo"></h3>
+                            <ul class="info">
+                                <li><strong>플랫폼</strong><p>APP(PS)</p></li>
+                                <li><strong>참여도</strong><p>개인작업 100%</p></li>
+                                <li><strong>사용 프로그램</strong><p>HTML / CSS / JavaScript / PHP</p></li>
+                                <li><strong>제작 페이지</strong><p>모든 페이지</p></li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <a class="btn" href="http://tomcard.dsrct.co.kr/">Website</a>
+                                <a class="btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Website -->
+        <section id="section4" class="section section4">
+            <div class="top">
+                <span class="platform">WEBSITE</span>
+            </div>
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="box_left">
+                            <img src="./img/port11.jpg" class="port_img_pc" alt="project image">
+                            <img src="./img/port12.jpg" class="port_img" alt="project image">
+                        </div>
+                        <div class="box_right">
+                            <h3 class="port_title"><img src="./img/imele_logo.png" class="port_logo" alt="project logo"></h3>
+                            <ul class="info">
+                                <li><strong>플랫폼</strong><p>WEB</p></li>
+                                <li><strong>참여도</strong><p>개인작업 100%</p></li>
+                                <li><strong>사용 프로그램</strong><p>HTML / CSS / JavaScript / PHP</p></li>
+                                <li><strong>제작 페이지</strong><p>모든 페이지</p></li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <a class="btn" href="https://hong-311.github.io/imele/">Website</a>
+                                <a class="btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_left">
+                            <img src="./img/port8.jpg" class="port_img_pc" alt="project image">
+                            <img src="./img/port10.png" class="port_img" alt="project image">
+                        </div>
+                        <div class="box_right">
+                            <h3 class="port_title"><img src="./img/lh_logo.png" class="port_logo" alt="project logo"></h3>
+                            <ul class="info">
+                                <li><strong>플랫폼</strong><p>WEB</p></li>
+                                <li><strong>참여도</strong><p>개인작업 100%</p></li>
+                                <li><strong>사용 프로그램</strong><p>HTML / CSS / JavaScript / PHP</p></li>
+                                <li><strong>제작 페이지</strong><p>모든 페이지</p></li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <a class="btn" href="https://lhplus123.co.kr">Website</a>
+                                <a class="btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_left">
+                            <img src="./img/port5.jpg" class="port_img_pc" alt="project image">
+                            <img src="./img/port7.jpg" class="port_img" alt="project image">
+                        </div>
+                        <div class="box_right">
+                            <h3 class="port_title"><img src="./img/buho_logo.png" class="port_logo" alt="project logo"></h3>
+                            <ul class="info">
+                                <li><strong>플랫폼</strong><p>WEB</p></li>
+                                <li><strong>참여도</strong><p>개인작업 100%</p></li>
+                                <li><strong>사용 프로그램</strong><p>HTML / CSS / JavaScript / PHP</p></li>
+                                <li><strong>제작 페이지</strong><p>모든 페이지</p></li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <a class="btn" href="https://pernumber.co.kr/">Website</a>
+                                <a class="btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_left">
+                            <img src="./img/port6.jpg" class="port_img_pc" alt="project image">
+                            <img src="./img/port9.png" class="port_img" alt="project image">
+                        </div>
+                        <div class="box_right">
+                            <h3 class="port_title"><img src="./img/jujungcha_logo.png" class="port_logo" alt="project logo"></h3>
+                            <ul class="info">
+                                <li><strong>플랫폼</strong><p>WEB</p></li>
+                                <li><strong>참여도</strong><p>개인작업 100%</p></li>
+                                <li><strong>사용 프로그램</strong><p>HTML / CSS / JavaScript / PHP</p></li>
+                                <li><strong>제작 페이지</strong><p>모든 페이지</p></li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <a class="btn" href="https://enforcement.co.kr/">Website</a>
+                                <a class="btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <section id="section5" class="section section5">
+            <div class="top">
+                <h2>CONTACT </h2><span class="me">me!</span>
+            </div>
+            <img src="./img/qrcode.jpg" class="qr" alt="Qr code">
+            <pre class="content_text">웹사이트와 콘텐츠의 세부적인 부분까지 신경 쓰며 사용자 경험을 최우선으로 고려한 퍼블리싱을 지향합니다. 
+                다양한 프로젝트를 통해 쌓은 경험과 기술을 바탕으로, 언제나 깔끔하고 효율적인 웹 페이지를 만드는 데 집중하고 있습니다. 
+                변화하는 웹 환경에 발맞춰 지속적으로 학습하고 성장하는 퍼블리셔가 되겠습니다.</pre>
+        </section>
+
+        <div class="top_button_wrap">
+            <a href="" class="top_button"><img src="./img/top_btn.png" alt="Top button"></a>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+
+    </main>
+
+<!-- 스크립트 -->
+<script src="./js/index.js"></script>
+
+</body>
+</html>
