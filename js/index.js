@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let bottom = document.querySelector('.bottom');
     
     let isScrolling = false;
+    let startTouch = 0;
 
+    // 마우스 휠 이벤트 (PC)
     section1.addEventListener('wheel', function (e) {
         if (isScrolling) return;
 
@@ -54,9 +56,54 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 300);
     });
 
+    // 터치 이벤트 (모바일)
+    section1.addEventListener('touchstart', function (e) {
+        startTouch = e.touches[0].clientY;
+    });
+
+    section1.addEventListener('touchmove', function (e) {
+        let touchMove = e.touches[0].clientY;
+        let sectionHeight = section1.clientHeight;
+
+        if (isScrolling) return;
+
+        if (startTouch > touchMove) {  // 스크롤 다운 (윗 방향)
+            text1.classList.remove("visible");
+            text1.classList.add("hidden");
+            text2.classList.add("visible");
+
+            bottom.style.opacity = "1";
+            bottom.style.visibility = "visible";
+
+            section1.scrollTo({
+                top: sectionHeight,
+                behavior: 'smooth'
+            });
+        } else if (startTouch < touchMove) {  // 스크롤 업 (아래 방향)
+            text1.classList.add("visible");
+            text1.classList.remove("hidden");
+            text2.classList.remove("visible");
+
+            bottom.style.opacity = "0";
+            bottom.style.visibility = "hidden";
+
+            section1.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        setTimeout(function () {
+            isScrolling = false;
+        }, 300);
+
+        e.preventDefault(); // 기본 스크롤 방지
+    });
+
     text1.classList.add("visible");
-    bottom.classList.add("hidden")
+    bottom.classList.add("hidden");
 });
+
 
 // 3. 스크롤 시 .skill 요소 처리
 window.addEventListener('scroll', function () {
