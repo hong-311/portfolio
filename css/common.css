@@ -101,6 +101,18 @@ header {
     width: 100%; 
 }
 
+/* footer */
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #000;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 .header_mo {
     display: none;
 }
@@ -256,6 +268,14 @@ header {
     .scroll-changed a {
         color: #fff !important;
     }
+
+    footer {
+        padding: 30px;
+    }
+    footer p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -270,5 +290,9 @@ header {
 
     .nav_menu li a {
         font-size: 25px;
+    }  
+    footer p {
+        font-size: 11px;
     }
+
 }
