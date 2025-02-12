@@ -40,7 +40,7 @@
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 1.5s ease-out;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .section1 .text1.visible {
@@ -431,7 +431,7 @@
 }
 
 /* 각 버튼 스타일 */
-.section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_right .btn_wrap .btn {
+.section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_right .btn_wrap a {
     width: 33%;
     display: flex;
     align-items: center;
@@ -445,9 +445,12 @@
     transition: all 0.3s ease;
     font-size: 18px;
 }
-
+/* 각 버튼 스타일 */
+.section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_right .btn_wrap .btn2 {
+    width: 50%;
+}
 /* 버튼 hover 스타일 */
-.section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_right .btn_wrap .btn:hover {
+.section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_right .btn_wrap a:hover {
     color: #393ba7;
     transform: scale(1.05); 
     cursor: pointer; 
@@ -528,7 +531,7 @@
         animation: bounce 1.5s infinite ease-in-out;
     }
     .section1 .bottom {
-        display: none;
+      
     }
     .section2 {
         width: 100%;
@@ -602,7 +605,7 @@
     .section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_left {
         width: 100%;
         gap: 20px;
-        padding: 0px 0;
+        padding: 5px 0;
     }
     .section .swiper.mySwiper .swiper-wrapper .swiper-slide .port_img {
         width: 20%;
@@ -624,7 +627,8 @@
         padding: 2px;
     }
     .section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_right .port_title .port_logo {
-        width: 180px;
+        width: 160px;
+        height: 35px;
         object-fit: contain;
     }
     .section strong {
@@ -672,7 +676,7 @@
         width: 25px;
     }
     .section1 .bottom {
-        top: calc(100% + 66rem);
+        display: none;
     }
     .section2 {
         width: 100%;
@@ -759,7 +763,8 @@
         font-size: 15px;
     }
     .section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_right .port_title .port_logo {
-        width: 165px;
+        width: 135px;
+        height: 30px;
     }
     .section strong {
         font-size: 15px;
@@ -767,7 +772,7 @@
     .section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_right .btn_wrap {
         margin-top: 30px;
     }
-    .section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_right .btn_wrap .btn {
+    .section .swiper.mySwiper .swiper-wrapper .swiper-slide .box_right .btn_wrap a {
         border-radius: 5px;
         font-size: 15px;
     }
