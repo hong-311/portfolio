@@ -22,11 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 767) {
         // text1과 text2 애니메이션 처리
         text1.classList.add("visible");
-        text2.classList.add("visible");  // 바로 text2도 보이게 설정
-        setTimeout(function () {
-            text2.classList.remove("hidden");
-        }, 2000);  // 2초 뒤에 text2 표시
-
+    
         // section1에서 스크롤 이벤트 막기
         section1.addEventListener('wheel', function (e) {
             e.preventDefault();  // 스크롤 이벤트 기본 동작 막기
@@ -149,3 +145,11 @@ document.querySelector('.top_button').addEventListener('click', function(e) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+$(document).ready(function () {
+    // 7. 푸터 로드
+    $("#footer-placeholder").load("footer.html", function (response, status, xhr) {
+        if (status !== "success") {
+            console.error("푸터 로드 오류:", xhr.status, xhr.statusText);
+        }
+    });
+});
