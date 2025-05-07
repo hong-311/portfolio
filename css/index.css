@@ -285,6 +285,10 @@
     animation-delay: 2.5s;
 }
 
+.skill_wrap .skill:nth-child(6) {
+    animation-delay: 3.0s;
+}
+
 /* section */
 .section {
     width: 100%;
